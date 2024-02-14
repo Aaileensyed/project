@@ -12,7 +12,7 @@ app.post("/api/create-checkout-session",async(req,res)=>{
     const {products} = req.body;
     const lineItems = products.map((product)=>({
         price_data:{
-            currency:"inr",
+            currency:"usd",
             product_data:{
                 name:product.dish,
                 images:[product.imgdata]
