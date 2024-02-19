@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <>
             <section className='iteam_section mt-4 container'>
-                <h2 className='px-4' style={{ fontWeight: 400 }}>Restaurants in Ahmedabad Open now</h2>
+                <h2 className='px-4' style={{ fontWeight: 400 }}>Restaurants in Hyderabad Open now</h2>
                 <div className='row mt-2 d-flex justify-content-around align-items-center'>
                     {
                         cartData.map((element, index) => {
@@ -38,7 +38,7 @@ const Home = () => {
 
                                             <div className="lower_data d-flex justify-content-between ">
                                                 <h5>{element.address}</h5>
-                                                <span>₹ {element.price}</span>
+                                                <span>$ {element.price}</span>
                                             </div>
                                             <div className="extra"></div>
 

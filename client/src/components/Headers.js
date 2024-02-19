@@ -10,10 +10,10 @@ const {carts} = useSelector((state)=>state.allCart);
 
     return (
         <>
-            <Navbar style={{ height: "60px", background: "black", color: "white" }}>
+            <Navbar style={{ height: "60px", background: "MistyRose", color: "white" }}>
                 <Container>
                 <NavLink to="/" className="text-decoration-none text-light mx-2">
-                    <h3 className='text-light'>Ecommerce</h3>
+                    <h3 className='text-light'>Food Hub</h3>
                 </NavLink>
                     <NavLink to="/cart" className="text-decoration-none text-light mx-2">
                     <div id='ex4'>
