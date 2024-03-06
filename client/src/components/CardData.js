@@ -26,7 +26,7 @@ const Cardsdata = [
     {
         id: 3,
         dish: "Pizza",
-        imgdata: "https://www.ezcater.com/wp-content/uploads/2017/10/shutterstock_84904876.jpg",
+        imgdata: "https://www.engelvoelkers.com/wp-content/uploads/2014/07/pizza-stock.jpg",
         address: "Fastfood",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
         somedata: " 650 + order placed from here recently",

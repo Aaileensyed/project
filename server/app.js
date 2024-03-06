@@ -1,9 +1,10 @@
+import { useAuth0 } from '@auth0/auth0-react';
 require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const stripe = require("stripe")("sk_test_51OgpQiSHuB20Suxh1BpewSILJowOhgzpsd8fPi53ELh7EgQC7Yr4hQ1fmSJxEH5uZVnS39NTreBrPec2DsLO1Cj800PZRtuaj7");
-
+const { user}=useAuth0();
 app.use(express.json());
 app.use(cors());
 
@@ -24,7 +25,7 @@ app.post("/api/create-checkout-session",async(req,res)=>{
 
     const session = await stripe.checkout.sessions.create({
         payment_method_types:["card"],
-        customer_email: 'customer@example.com',
+        customer_email: user.name,
         billing_address_collection: 'required',
         shipping_address_collection: {
             allowed_countries: ['US', 'CA'],
